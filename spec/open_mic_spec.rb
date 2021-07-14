@@ -1,3 +1,4 @@
+require 'pry'
 require './lib/open_mic'
 require './lib/user'
 require './lib/joke'
