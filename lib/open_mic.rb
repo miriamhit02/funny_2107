@@ -10,4 +10,13 @@ class OpenMic
   def welcome(user)
     @performers << user
   end
+
+  def repeated_jokes?
+    jokes = []
+    @performers.each do |user|
+      jokes << user.jokes
+    end
+    jokes.flatten
+    jokes.length != jokes.uniq.length
+  end
 end
